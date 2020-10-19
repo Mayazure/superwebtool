@@ -2,6 +2,7 @@ import React, {useState} from "react";
 import {Form, Button, Row, Col, Space} from 'antd'
 import TextArea from "antd/es/input/TextArea";
 import JSONTreeView from "../components/JSONTreeBuilder";
+import mock from "../mock/mock";
 
 export default function (props){
 
@@ -11,6 +12,18 @@ export default function (props){
     const onVisualize = ()=>{
         const value = form.getFieldValue('jsonInput')
         setJsonStr(value)
+    }
+
+    const onExample = ()=>{
+        form.setFieldsValue({
+            jsonInput: mock,
+        });
+        onVisualize();
+    }
+
+    const onClear = ()=>{
+        form.resetFields();
+        onVisualize();
     }
 
     const onFormat = ()=>{
@@ -23,6 +36,8 @@ export default function (props){
                 <div style={{margin:'4px'}}>
                     <Space>
                         <Button onClick={()=>onFormat()} disabled>format</Button>
+                        <Button onClick={()=>onExample()}>example</Button>
+                        <Button onClick={()=>onClear()}>clear</Button>
                         <Button type="primary" onClick={()=>onVisualize()}>visualize</Button>
                     </Space>
                 </div>
