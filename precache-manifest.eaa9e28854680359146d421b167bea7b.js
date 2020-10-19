@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "18f7400533b1ef1bd87f5344a0b200ec",
+    "revision": "ad1c572ba16bc2c6b3e8cd4bab26a62b",
     "url": "/superwebtool/index.html"
   },
   {
