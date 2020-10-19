@@ -1,6 +1,14 @@
 import React, {useEffect, useState} from "react";
 import {Tree} from 'antd';
 import { v4 as uuidv4 } from 'uuid';
+import {
+    DownOutlined,
+    GoldOutlined,
+    UnorderedListOutlined,
+    FieldStringOutlined,
+    FieldNumberOutlined,
+    FieldBinaryOutlined
+} from '@ant-design/icons';
 
 function JSONTreeView(props){
 
@@ -30,27 +38,18 @@ function JSONTreeView(props){
         return(
             <Tree
                 showIcon
+                showLine={{showLeafIcon: false}}
+                switcherIcon={<DownOutlined />}
                 treeData={jsonTreeData}
             />
         )
     }
 
     if(parseError){
-        return(
-            <>
-                {parseError}
-            </>
-        )
+        return(<>{parseError}</>)
     }
 
-    return(
-        <>
-
-        </>
-    )
-
-
-
+    return(<></>)
 }
 
 const tree = (key, value)=>{
@@ -64,7 +63,8 @@ const treeNode = (key, value)=>{
         const node = {
             title:key,
             key:uuidv4(),
-            icon: <span color="#87d068">[]</span>,
+            // icon: <span color="#87d068">[]</span>,
+            icon: <UnorderedListOutlined />,
             children:[]
         }
         value.forEach((child, index)=>{
@@ -75,7 +75,8 @@ const treeNode = (key, value)=>{
         const node = {
             title:key,
             key:uuidv4(),
-            icon: <span color="#108ee9">{"{}"}</span>,
+            // icon: <span color="#108ee9">{"{}"}</span>,
+            icon: <GoldOutlined />,
             children:[]
         }
         Object.keys(value).forEach((key)=>{
@@ -84,16 +85,26 @@ const treeNode = (key, value)=>{
         return node;
     }else{
         let title;
+        let icon;
         switch (typeof value){
             case 'string':
                 title = `${key} : "${value}"`
+                icon = <FieldStringOutlined />
+                break
+            case 'number':
+                title = `${key} : ${value}`
+                icon = <FieldNumberOutlined />
+                break
+            case 'boolean':
+                title = `${key} : ${value}`
+                icon = <FieldBinaryOutlined />
                 break
             default:
                 title = `${key} : ${value}`
         }
-
         return({
             title,
+            icon,
             key:uuidv4(),
         })
     }
