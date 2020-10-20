@@ -46,7 +46,7 @@ function JSONTreeView(props){
     }
 
     if(parseError){
-        return(<>{parseError}</>)
+        return(<div style={{color:'red'}}>{parseError}</div>)
     }
 
     return(<></>)

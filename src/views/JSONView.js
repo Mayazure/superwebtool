@@ -27,17 +27,28 @@ export default function (props){
     }
 
     const onFormat = ()=>{
+        const value = form.getFieldValue('jsonInput')
+        form.setFieldsValue({
+            jsonInput: JSON.stringify(JSON.parse(value), undefined, 4)
+        })
+    }
 
+    const onCompress = ()=>{
+        const value = form.getFieldValue('jsonInput')
+        form.setFieldsValue({
+            jsonInput: JSON.stringify(JSON.parse(value))
+        })
     }
 
     return(
-        <>
+        <div>
             <Row>
                 <div style={{margin:'4px'}}>
                     <Space>
-                        <Button onClick={()=>onFormat()} disabled>format</Button>
-                        <Button onClick={()=>onExample()}>example</Button>
+                        <Button onClick={()=>onFormat()}>format</Button>
+                        <Button onClick={()=>onCompress()}>compress</Button>
                         <Button onClick={()=>onClear()}>clear</Button>
+                        <Button onClick={()=>onExample()}>example</Button>
                         <Button type="primary" onClick={()=>onVisualize()}>visualize</Button>
                     </Space>
                 </div>
@@ -59,6 +70,6 @@ export default function (props){
                     <JSONTreeView jsonStr={jsonStr}/>
                 </Col>
             </Row>
-        </>
+        </div>
     )
 }
