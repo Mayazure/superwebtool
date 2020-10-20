@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "67523f0f95fea412a4471ade7792acc0",
+    "revision": "ddf95ed8d1f56cdc48405d5ad28750b0",
     "url": "/superwebtool/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/superwebtool/static/css/2.24900eab.chunk.css"
   },
   {
-    "revision": "adac46ad77e29e8ae700",
+    "revision": "2851e972ef941e06e9eb",
     "url": "/superwebtool/static/css/main.c488d775.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/superwebtool/static/js/2.e6f64e4e.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "adac46ad77e29e8ae700",
-    "url": "/superwebtool/static/js/main.7ca5fa8e.chunk.js"
+    "revision": "2851e972ef941e06e9eb",
+    "url": "/superwebtool/static/js/main.f0ffcf23.chunk.js"
   },
   {
     "revision": "e4832031531fc9f62292",

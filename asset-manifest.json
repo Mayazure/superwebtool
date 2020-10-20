@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/superwebtool/static/css/main.c488d775.chunk.css",
-    "main.js": "/superwebtool/static/js/main.7ca5fa8e.chunk.js",
-    "main.js.map": "/superwebtool/static/js/main.7ca5fa8e.chunk.js.map",
+    "main.js": "/superwebtool/static/js/main.f0ffcf23.chunk.js",
+    "main.js.map": "/superwebtool/static/js/main.f0ffcf23.chunk.js.map",
     "runtime-main.js": "/superwebtool/static/js/runtime-main.5dc17417.js",
     "runtime-main.js.map": "/superwebtool/static/js/runtime-main.5dc17417.js.map",
     "static/css/2.24900eab.chunk.css": "/superwebtool/static/css/2.24900eab.chunk.css",
     "static/js/2.e6f64e4e.chunk.js": "/superwebtool/static/js/2.e6f64e4e.chunk.js",
     "static/js/2.e6f64e4e.chunk.js.map": "/superwebtool/static/js/2.e6f64e4e.chunk.js.map",
     "index.html": "/superwebtool/index.html",
-    "precache-manifest.7b37cbc1a2231f47a9c2c12790868e78.js": "/superwebtool/precache-manifest.7b37cbc1a2231f47a9c2c12790868e78.js",
+    "precache-manifest.99cbd70d4061aa024f1b680148454558.js": "/superwebtool/precache-manifest.99cbd70d4061aa024f1b680148454558.js",
     "service-worker.js": "/superwebtool/service-worker.js",
     "static/css/2.24900eab.chunk.css.map": "/superwebtool/static/css/2.24900eab.chunk.css.map",
     "static/css/main.c488d775.chunk.css.map": "/superwebtool/static/css/main.c488d775.chunk.css.map",
@@ -20,6 +20,6 @@
     "static/css/2.24900eab.chunk.css",
     "static/js/2.e6f64e4e.chunk.js",
     "static/css/main.c488d775.chunk.css",
-    "static/js/main.7ca5fa8e.chunk.js"
+    "static/js/main.f0ffcf23.chunk.js"
   ]
 }
