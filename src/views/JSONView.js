@@ -1,8 +1,10 @@
 import React, {useState} from "react";
-import {Form, Button, Row, Col, Space} from 'antd'
+import {Form, Button, Row, Col, Space, Divider} from 'antd'
 import TextArea from "antd/es/input/TextArea";
 import JSONTreeView from "../components/JSONTreeBuilder";
+import {GithubFilled} from "@ant-design/icons"
 import mock from "../mock/mock";
+import "../assets/css/swt.css"
 
 export default function (props){
 
@@ -41,18 +43,29 @@ export default function (props){
     }
 
     return(
-        <div>
-            <Row>
-                <div style={{margin:'4px'}}>
-                    <Space>
-                        <Button onClick={()=>onFormat()}>format</Button>
-                        <Button onClick={()=>onCompress()}>compress</Button>
-                        <Button onClick={()=>onClear()}>clear</Button>
-                        <Button onClick={()=>onExample()}>example</Button>
-                        <Button type="primary" onClick={()=>onVisualize()}>visualize</Button>
-                    </Space>
-                </div>
-            </Row>
+        <>
+            <div className="shadow">
+                <Row>
+                    <Col span={12}>
+                        <div className="text-left" style={{margin:'4px'}}>
+                            <Space>
+                                <Button onClick={()=>onFormat()}>format</Button>
+                                <Button onClick={()=>onCompress()}>compress</Button>
+                                <Button onClick={()=>onClear()}>clear</Button>
+                                <Button onClick={()=>onExample()}>example</Button>
+                                <Button type="primary" onClick={()=>onVisualize()}>visualize</Button>
+                            </Space>
+                        </div>
+                    </Col>
+                    <Col span={12}>
+                        <div className="text-right" style={{margin:'4px'}}>
+                            <Space>
+                                <Button href="https://github.com/Mayazure/superwebtool" icon={<GithubFilled />}>Github</Button>
+                            </Space>
+                        </div>
+                    </Col>
+                </Row>
+            </div>
             <Row>
                 <Col span={10}>
                     <Form
@@ -70,6 +83,6 @@ export default function (props){
                     <JSONTreeView jsonStr={jsonStr}/>
                 </Col>
             </Row>
-        </div>
+        </>
     )
 }
