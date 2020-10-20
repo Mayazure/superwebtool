@@ -46,7 +46,7 @@ export default function (props){
         <>
             <div className="shadow">
                 <Row>
-                    <Col span={12}>
+                    <Col xs={24} lg={12}>
                         <div className="text-left" style={{margin:'4px'}}>
                             <Space>
                                 <Button onClick={()=>onFormat()}>format</Button>
@@ -57,7 +57,7 @@ export default function (props){
                             </Space>
                         </div>
                     </Col>
-                    <Col span={12}>
+                    <Col xs={24} lg={12}>
                         <div className="text-right" style={{margin:'4px'}}>
                             <Space>
                                 <Button href="https://github.com/Mayazure/superwebtool" icon={<GithubFilled />}>Github</Button>
