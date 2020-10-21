@@ -41,8 +41,8 @@ export default defineConfig({
               name: 'MENU_LABEL_JSON_VISUALIZATION',
               icon: 'project',
               component: '@/pages/json/Visualization',
-            }
-          ]
+            },
+          ],
         },
         {
           component: './404',
@@ -63,6 +63,8 @@ export default defineConfig({
   ignoreMomentLocale: true,
   proxy: proxy[REACT_APP_ENV || 'dev'],
   manifest: {
-    basePath: '/',
+    basePath: '/superwebtool/',
   },
+  base: '/superwebtool/',
+  publicPath: '/superwebtool/',
 });

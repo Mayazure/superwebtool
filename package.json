@@ -3,10 +3,12 @@
   "version": "4.2.2",
   "private": true,
   "description": "An out-of-box UI solution for enterprise applications",
+  "homepage": "http://Mayazure.github.io/superwebtool",
   "scripts": {
     "analyze": "cross-env ANALYZE=1 umi build",
     "build": "umi build",
-    "deploy": "npm run site && npm run gh-pages",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
     "dev": "npm run start:dev",
     "fetch:blocks": "pro fetch-blocks && npm run prettier",
     "gh-pages": "gh-pages -d dist",
