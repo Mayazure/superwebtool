@@ -10,7 +10,7 @@ const proSettings = {
   menu: {
     locale: true,
   },
-  title: 'Ant Design Pro',
+  title: 'Super Web Tools',
   pwa: false,
   iconfontUrl: '',
 };
