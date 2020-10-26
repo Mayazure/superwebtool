@@ -1,14 +1,14 @@
 {
   "/superwebtool/layouts__BasicLayout.css": "/superwebtool/layouts__BasicLayout.303a1b39.chunk.css",
-  "/superwebtool/layouts__BasicLayout.js": "/superwebtool/layouts__BasicLayout.c0729ade.async.js",
+  "/superwebtool/layouts__BasicLayout.js": "/superwebtool/layouts__BasicLayout.63c085c3.async.js",
   "/superwebtool/layouts__BlankLayout.js": "/superwebtool/layouts__BlankLayout.7f7c706c.async.js",
   "/superwebtool/p__404.js": "/superwebtool/p__404.8f4a60ee.async.js",
   "/superwebtool/p__json__Visualization.css": "/superwebtool/p__json__Visualization.28cdb2da.chunk.css",
   "/superwebtool/p__json__Visualization.js": "/superwebtool/p__json__Visualization.483b65cc.async.js",
   "/superwebtool/umi.css": "/superwebtool/umi.559dbf6b.css",
-  "/superwebtool/umi.js": "/superwebtool/umi.f54ed27e.js",
+  "/superwebtool/umi.js": "/superwebtool/umi.1b77861c.js",
   "/superwebtool/vendors~layouts__BasicLayout.css": "/superwebtool/vendors~layouts__BasicLayout.8149a673.chunk.css",
-  "/superwebtool/vendors~layouts__BasicLayout.js": "/superwebtool/vendors~layouts__BasicLayout.7b775bcc.async.js",
+  "/superwebtool/vendors~layouts__BasicLayout.js": "/superwebtool/vendors~layouts__BasicLayout.fb579236.async.js",
   "/superwebtool/vendors~p__404.css": "/superwebtool/vendors~p__404.e33cb4fa.chunk.css",
   "/superwebtool/vendors~p__404.js": "/superwebtool/vendors~p__404.1263b57f.async.js",
   "/superwebtool/vendors~p__json__Visualization.css": "/superwebtool/vendors~p__json__Visualization.95b079c1.chunk.css",
@@ -19,6 +19,5 @@
   "/superwebtool/icons/icon-192x192.png": "/superwebtool/icons/icon-192x192.png",
   "/superwebtool/icons/icon-512x512.png": "/superwebtool/icons/icon-512x512.png",
   "/superwebtool/index.html": "/superwebtool/index.html",
-  "/superwebtool/pro_icon.svg": "/superwebtool/pro_icon.svg",
-  "/superwebtool/static/logo.svg": "/superwebtool/static/logo.f0355d39.svg"
+  "/superwebtool/pro_icon.svg": "/superwebtool/pro_icon.svg"
 }
